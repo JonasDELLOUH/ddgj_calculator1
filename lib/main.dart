@@ -168,7 +168,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Button.blue(label: "+/-", onTap: () {},),
+                      Button.blue(label: "+/-", onTap: () => setState(() {calculator.addUserInput("-");}),),
                       Button.grey(label: "0", onTap: () => setState(() {calculator.addUserInput("0");}),),
                       Button.blue(label: ",", onTap: () => setState(() {calculator.addUserInput(".");}),),
                       Button.blue(label: "=", onTap: () => setState(() {calculator.result();}),),
